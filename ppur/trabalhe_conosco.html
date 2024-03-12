@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta property="og:url" content="http://www.prudenteurbano.com/" />
+    <link rel="icon" href="img\icon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Prudente Urbano</title>
+  </head>
+  <body>
+    <nav>
+        <div class="logo">
+            <a href="index.php"><h4>Prudente Urbano</h4></a>
+        </div>
+        <div></div><!--div moscando-->
+        <ul class="nav-links">
+          <li>
+            <a href="#">Linhas / Itinerários</a>
+          </li>
+          <li>
+            <a href="aonde-esta-meu-onibus.html">Aonde Está Meu Ônibus?</a>
+          </li>
+          <li>
+            <a href="informacoes.html">Informações</a>
+          </li>
+          <li>
+            <a href="institucional.html">Institucional</a>
+          </li>
+          <li>
+            <a href="noticias.php">Notícias</a>
+          </li>
+          <li>
+            <a href="fale_conosco.html">Fale Conosco</a>
+          </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+      <script type="text/javascript" src="js/app.js"></script>
+    </nav>
+    <div id="main"></div>
+    <div class="geral">
+      <div class="geral_txt" style="min-height:900px ">
+     <h2>Trabalhe Conosco</h2><br>
+      <p>Faça parte da equipe Prudente Urbano. Preencha o formulário abaixo com sua experiência profissional e aguarde nosso contato.</p><br>
+      <p style="color: gray;font-size: 16px">Campos Marcados com * são de preenchimento obrigatório.</p><br>
+	  
+<div id="form2">
+  <h2>Dados Pessoais</h2>
+<form method="post" action="php/insert_curriculo.php">
+
+      <input type="text" name="nome" placeholder="*Nome Completo" maxlength="30" size="50" required style="float:left">
+
+			<input type="text" name="cpf" placeholder="*CPF" maxlength="11" size="13" required style="float:left">
+
+			<input type="text" name="facebook" placeholder="Facebook" maxlength="50" size="22" style="float:left">
+
+      <input type="text" name="email" placeholder="*E-mail" maxlength="30" size="30" required style="float:left">
+
+			      <select name="sexo" required style="width: 120px;float:left">
+              <option value="" selected hidden>*Sexo</option>
+              <option value="1">Feminino</option>
+              <option value="2">Masculino</option>
+            </select>
+
+			    <select name="estado-civil" required style="width: 150px;float:left">
+            <option value="" selected hidden>*Estado Civil</option>
+            <option value="1">Solteiro</option>
+            <option value="2">Casado</option>
+      			<option value="3">Viúvo</option>
+          </select>
+
+			<input type="text" name="naturalidade" placeholder="*Naturalidade" maxlength="30" size="32" required style="float:left">
+
+        <select name="qtd-de-filhos" required style="width: 150px;float:left">
+          <option value="" selected hidden>*Qtde Filhos</option>
+          <option value="0">Nenhum</option>
+          <option value="1">1 (Um)</option>
+          <option value="2">2 (Dois)</option>
+          <option value="3">3 (Três)</option>
+          <option value="4">4 (Quatro)</option>
+          <option value="5">5 (Cinco) ou mais</option>
+        </select>
+
+      <h3 style="float:left;margin-top: 5px">*Data de Nascimento:</h3>
+			<input type="date" name="data-de-nasc" required style="float:left">
+
+            <input type="tel" name="telefone" placeholder="Telefone*" maxlength="11" size="14" required><br><br>
+
+			<h2>Endereço</h2><br>
+
+			<input type="text" name="cep" placeholder="*CEP" maxlength="8" size="10" required style="float:left">
+
+			<input type="text" name="endereço" placeholder="*Endereço" maxlength="50" size="32" required style="float:left">
+
+			<input type="text" name="numero" placeholder="*Nº" maxlength="4" size="5" required style="float:left">
+
+			<input type="text" name="complemento" placeholder="*Complemento" maxlength="45" size="30" required style="float:left">
+
+			<input type="text" name="bairro" placeholder="*Bairro" maxlength="45" size="30" required style="float:left">
+
+			<select name="UF" style="width: 200px;float:left;" required>
+            <option value="" selected hidden>*UF</option>
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+          </select>
+
+			<input type="text" name="cidade" placeholder="*Cidade" maxlength="50" size="40" required style="float:left"><br><br><br><br><br><br>
+
+			<h2>Formação Escolar</h2>  
+
+			<input type="text" name="escolaridade" placeholder="*Escolaridade" maxlength="45" size="60" required style="float:left">
+
+			<input type="text" name="curso" placeholder="*Curso" maxlength="45" size="32" required style="float:left">
+
+			<input type="text" name="duração" placeholder="*Duração" maxlength="45" size="35" required style="float:left">
+
+			<input type="text" name="instituição" placeholder="*Instituição" maxlength="45" size="33" required style="float:left">
+
+      <input type="text" name="ano-de-conclusão" placeholder="*Ano de Conclusão" maxlength="4" size="17" required style="float:left">
+
+			<input type="text" name="tipo-de-formação" placeholder="*Tipo de Formação" maxlength="45" size="100" required style="float:left">
+          <br><br><br><br><br><br><br><br><br>
+			
+
+			<h2>Histórico Profissional</h2>
+			<p>Descreva sua trajetória profissional</p>
+			<h3>Último Emprego</h3>
+
+			<input type="text" name="empresa-ultimo-emprego" placeholder="*Empresa" maxlength="45" size="40.5" required style="float:left">
+
+			<input type="text" name="cargo-ultimo-emprego" placeholder="*Cargo" maxlength="45" size="30.5" required style="float:left">
+			
+      <input type="text" name="duração-ultimo-emprego" placeholder="*Duração" maxlength="45" size="16.5" required style="float:left">
+
+			<textarea required name="atividades-ultimo-emprego" placeholder="*Relate suas atividades exercidas na função" style="float:left; width: 100%;"></textarea>
+
+<br><br><br><br><br>
+
+      <h3>Primeiro Emprego</h3>
+
+			<input type="text" name="empresa-primeiro-emprego" placeholder="*Empresa" maxlength="45" size="40.5" required style="float:left">
+
+      <input type="text" name="cargo-primeiro-emprego" placeholder="*Cargo" maxlength="45" size="30.5" required style="float:left">
+      
+      <input type="text" name="duração-primeiro-emprego" placeholder="*Duração" maxlength="45" size="16.5" required style="float:left">
+
+      <textarea required name="atividades-primeiro-emprego" placeholder="*Relate suas atividades exercidas na função" style="float:left; width: 100%;"></textarea>
+
+
+            <center><input type="submit" class='submit' value="Enviar"></center>
+    </form>  	
+    </div>
+  </div>
+</div>
+    <div class="rodape1">
+        <div style="margin:20px; height: 250px; width: 12vh">
+          <p style="color: #ffd91e">Home</p>
+              <li>
+                <a href="noticias.php">
+                  Notícias
+                </a>
+              </li>
+        </div>
+        <div style="margin:20px; height: 250px; width: 30vh">
+          <p style="color: #ffd91e"><a href="informacoes.html">Informações</a></p>
+              <li>
+                <a href="informacoes.html#cartao-estudante">
+                  Cartão Estudante
+                </a>
+              </li>
+              <li>
+                <a href="informacoes.html#pontos-de-recarga">
+                  Pontos de Recarga
+                </a>
+              </li>
+              <li>
+                <a href="informacoes.html#cartao-transporte">
+                  Cartão Vale Transporte
+                </a>
+              </li>
+              <li>
+                <a href="informacoes.html#biometria-facial">
+                  Biometria Facial
+                </a>
+              </li>
+              <li>
+                <a href="informacoes.html#acessibilidade">
+                  Acessibilidade
+                </a>
+              </li>
+              <li>
+                <a href="informacoes.html#app-meu-onibus">
+                  App Prudente Urbano
+                </a>
+              </li>
+              <li>
+                <a href="informacoes.html#cartao-gratuidade">
+                  Cartão Gratuidade
+                </a>
+              </li>
+        </div>
+        <div style="margin:20px; height: 250px; width: 30vh">
+          <p><a href="institucional.html">Institucional</a></p>
+              <li>
+                <a href="institucional.html#historico">
+                  Histórico da Empresa
+                </a>
+              </li>
+              <li>
+                <a href="institucional.html#missao">
+                  Missão
+                </a>
+              </li>
+              <li>
+                <a href="institucional.html#visao">
+                  Visão
+                </a>
+              </li>
+              <li>
+                <a href="institucional.html#valores">
+                  Valores
+                </a>
+              </li>
+        </div>
+        <div style="margin:20px; height: 250px; width: 25vh">
+          <p><a href="fale_conosco.html">Fale Conosco</a></p>
+              <li>
+                <a href="duvidas_frequentes.html">
+                  Perguntas Frequentes
+                </a>
+              </li>
+              <li>
+                <a href="trabalhe_conosco.html">
+                  Trabalhe Conosco
+                </a>
+              </li>
+              <li>
+                <a href="ouvidoria.html">
+                  Ouvidoria
+                </a>
+              </li>
+        </div>
+
+          <div style="border-left:1px solid #fff;height:200px;"></div>
+
+        <div style="margin:30px; height: 250px; width: 40vh">
+          <img src="img\pu-logo-yellow.png">
+            <div style="height: 10px"></div>
+          <p style="color:#fff; font-size:14px;">PPU – Prático Prudente Urbano<br>
+          Terminal Urbano<br> 
+          Av. Brasil, 936<br>
+          Pres. Prudente – SP</p>
+          <p style="color:#ffd91e; font-size:12px;">Atendimento: Segunda à Sexta | 08h às 17h</p>
+        </div>
+    </div>
+    <div class="rodape2">
+    <br><p style="text-align: center">Todos os direitos reservados ®  Prudente Urbano</p>
+    </div>
+</body>
+</html>
