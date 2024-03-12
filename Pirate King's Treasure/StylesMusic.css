@@ -1,0 +1,220 @@
+body, 
+	.menu,
+		.sub-menu {
+			margin: 0;
+			padding: 0;
+		}
+		.clearfix:after{
+			content: '.';
+			display: block;
+			clear: both;
+			height: 0;
+			line-height: 0;
+			font-size: 0;
+			visibility: hidden;
+			overflow: hidden;
+		}
+		.menu,
+			.sub-menu {
+				list-style: none;
+				background: #151515;
+			}
+			.sub-menu {
+				background: #444;
+			}
+			.menu a {
+				text-decoration: none;
+				display: block;
+				padding: 15px;
+				color: #fff;
+				font-family: sans-serif;
+				font-size: 15px;
+				text-transform: uppercase;
+				font-weight: 600;
+			}
+			.menu li {
+				position: relative;
+			}
+			.menu > li {
+				float: left;
+			}
+				.menu > li:hover {
+				background: #444;
+			}
+					.menu li:hover > .sub-menu {
+						display: block;
+					}
+					.sub-menu {
+						display: none;
+						position: absolute;
+						min-width: 200px;
+					}
+					.sub-menu li:hover {
+						background: #555;
+					}
+					.sub-menu .sub-menu {
+						top: 0;
+						left: 100%;
+			}
+
+#head{
+  /*Largura da página */
+  width:1100px;
+  /*Altura da página*/
+  height:250px;
+  
+  /*Posição que a página ocupará na tela*/
+
+  /*top : posição de cima */
+  margin-top:50px;
+  /* left: posição de esquerda*/
+  margin-left:auto;
+  /* bottom : posição de baixo */
+  margin-bottom:0px;
+  /* right : posição de direita */
+  margin-right:auto;
+  /*Cor de fundo da página */
+  background: url('brook.png') top center no-repeat;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#site{
+  /*Largura da página */
+  width:1100px;
+  /*Altura da página*/
+  height:auto;
+  /*Posição que a página ocupará na tela*/
+  
+  /*top : posição de cima */
+  margin-top:0px;
+  /* left: posição de esquerda*/
+  margin-left:auto;
+  /* bottom : posição de baixo */
+  margin-bottom:0px;
+  /* right : posição de direita */
+  margin-right:auto;
+  /*Cor de fundo da página */
+background-color: rgba(255/*Vermelho*/,255/*Verde*/,255/*Azul*/,0.85/*Transparência*/); 
+/*em rgba para o texto não ficar com a opacidade*/
+
+/*
+	opacity:0.65;
+	-moz-opacity: 0.65;
+	filter: alpha(opacity=65);
+	
+Onde:
+
+- Filter: Indica qual o tipo de transparência utilizado;
+- (Opacity=x): Indica o nível de transparência da div (de 0 a 100);
+- Opacity: Indica ao navegador o nível de transparência a ser identificado (de 0 a 1.0).*/
+
+/*Lista com prefixo de cada navegador
+Google Chrome e Safari: -webkit-
+Mozilla Firefox: -moz-
+Internet Explorer: -ms-
+Opera: -o- */
+}
+#text {
+	/*Largura da página */
+  width:1000px;
+  /*Altura da página*/
+  height:auto;
+  /*Posição que a página ocupará na tela*/
+  
+  /*top : posição de cima */
+  margin-top:0px;
+  /* left: posição de esquerda*/
+  margin-left:auto;
+  /* bottom : posição de baixo */
+  margin-bottom:0px;
+  /* right : posição de direita */
+  margin-right:auto;
+  		font-size: 18px;
+		line-height:25px; 
+}
+#text-large {
+	/*Largura da página */
+  width:1000px;
+  /*Altura da página*/
+  height:auto;
+  /*Posição que a página ocupará na tela*/
+  
+  /*top : posição de cima */
+  margin-top:0px;
+  /* left: posição de esquerda*/
+  margin-left:auto;
+  /* bottom : posição de baixo */
+  margin-bottom:0px;
+  /* right : posição de direita */
+  margin-right:auto;
+	text-align: justify;
+  		font-size: 18px;
+		text-indent:3em;
+		line-height:30px; 
+  }
+}
+
+#foot {
+	/*Largura da página */
+  width:1100px;
+  /*Altura da página*/
+ min-height:50px;
+  /*Posição que a página ocupará na tela*/
+  
+  /*top : posição de cima */
+  margin-top:0px;
+  /* left: posição de esquerda*/
+  margin-left:auto;
+  /* bottom : posição de baixo */
+  margin-bottom:10px;
+  /* right : posição de direita */
+  margin-right:auto;
+    /*Cor de fundo da página */
+background-color: rgba(255/*Vermelho*/,255/*Verde*/,255/*Azul*/,0.85/*Transparência*/); 
+/*em rgba para o texto não ficar com a opacidade*/
+}
+body{
+  background: url('brook.jpg') center center no-repeat fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*Lista com prefixo de cada navegador
+Google Chrome e Safari: -webkit-
+Mozilla Firefox: -moz-
+Internet Explorer: -ms-
+Opera: -o- */
+
+}
+button{
+	font-family:	helvetica;
+	font-size:	15px;
+}
+a{
+	font-family:	helvetica;
+	font-size:	15px;
+}
+li{
+	font-family:	verdana;
+}
+small {
+	font-family:	calibri;
+}
+h1	{
+		font-family:	sans-serif;
+}
+h2	{
+		font-family:	sans-serif;
+}
+h3	{
+		font-family:	sans-serif;
+}
+h4	{
+		font-family:	sans-serif;
+}
+p	{
+		font-family:	verdana;
+		font-size: 16px;
+}
